@@ -1,19 +1,18 @@
-{% extends 'base.html' %} <!-- Notação de herança -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Inicial</title>
-    </head>
-    <body>
-        {% block conteudo %}
-
-        <h1> Aprendendo Django. </h1>
-        <p>Corpo da Página Inicial</p>
-
+        {% block titulo %}
+        <title>Página Base Geral</title>
         {% endblock %}
+    </head>
+
+    <body>
+        {% block conteudo %} <!-- Notação do Django -->
+        <p>Página base. </p>
+        {% endblock %}
+
     </body>
 </html>

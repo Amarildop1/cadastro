@@ -7,7 +7,7 @@ class Permissionario(models.Model):
     cpf = models.CharField(max_length=40, verbose_name='CPF')
     telefone = models.CharField(max_length=15, verbose_name='Telefone')
 
-    def _str__(self):
-        return f'Nome: {nome} | Telefone: {telefone}'
+    def __str__(self):
+        return f'Nome: {self.nome} | CPF: {self.cpf}| Telefone: {self.telefone}'
 
 
